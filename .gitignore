@@ -1,0 +1,30 @@
+# Exclude system directories
+AppData/
+Application Data/
+Cookies/
+Documents/My Music/
+Documents/My Pictures/
+Documents/My Videos/
+Local Settings/
+My Documents/
+NetHood/
+PrintHood/
+Recent/
+SendTo/
+Start Menu/
+Templates/
+
+# Exclude VSCode extensions
+.vscode/extensions/
+
+# Exclude other unnecessary files
+*.log
+*.tmp
+*.bak
+
+# Exclude specific files mentioned in the error log
+.bash_history
+.config/
+.gitconfig
+AppData/Local/ApplicationData/
+AppData/Local/History/

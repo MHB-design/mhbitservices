@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MHB IT Services - Navigation Bar</title>
+    <!-- Link to external CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_ACTUAL_API_KEY"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="javascript:void(0);" onclick="showContent('home')">Home</a></li>
+            <li><a href="javascript:void(0);" onclick="showContent('about')">About Us</a></li>
+            <li><a href="javascript:void(0);" onclick="showContent('services')">Services</a></li>
+            <li><a href="javascript:void(0);" onclick="showContent('location')">Location</a></li>
+            <li><a href="javascript:void(0);" onclick="showContent('partners')">Partners</a></li>
+            <li><a href="javascript:void(0);" onclick="showContent('contacts')">Contacts</a></li>
+            <li><a href="javascript:void(0);" onclick="showContent('team')">Our Team</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content Sections -->
+    <div id="home" class="content-section">
+        <h2>WELCOME TO MHB IT SERVICES</h2>
+        <p>We provide top-notch IT solutions to help businesses grow and enhance their productivity. Our team specializes in server administration, network solutions, cloud services, and much more.</p>
+    </div>
+
+    <div id="about" class="content-section hidden">
+        <h2>About Us</h2>
+        <p>MHB IT Services was founded in 2023 with a mission to provide reliable and efficient IT solutions. We aim to empower businesses by offering high-quality IT services tailored to meet their unique needs.</p>
+
+        <div class="about-details">
+            <div class="about-item">
+                <h3>Mission</h3>
+                <p>Our mission is to provide innovative and reliable IT solutions that drive business growth and enhance operational efficiency. We are committed to delivering exceptional services that exceed our clients' expectations.</p>
+            </div>
+
+            <div class="about-item">
+                <h3>Vision</h3>
+                <p>Our vision is to be the leading IT solutions provider in the region, known for our excellence, customer-centric approach, and technological expertise. We strive to continuously innovate and set new industry standards.</p>
+            </div>
+
+            <div class="about-item">
+                <h3>Objective</h3>
+                <p>Our objective is to help businesses optimize their IT infrastructure and maximize their productivity through top-tier support and solutions. We aim to be the trusted partner for all our clients' IT needs.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="services" class="content-section hidden">
+        <h2>Our Services</h2>
+        <div class="about-details">
+            <div class="about-item">
+                <i class="fas fa-desktop service-icon"></i>
+                <h3>COMPUTER & ACCESSORY SALES</h3>
+                <p>We offer a wide range of computers and IT accessories to meet your needs for high-performance devices and peripherals.</p>
+            </div>
+            <div class="about-item">
+                <i class="fas fa-tools service-icon"></i>
+                <h3>COMPUTER MAINTENANCE & REPAIR</h3>
+                <p>Our expert technicians provide top-notch maintenance and repair services to keep your systems running smoothly.</p>
+            </div>
+            <div class="about-item">
+                <i class="fas fa-network-wired service-icon"></i>
+                <h3>NETWORK SOLUTIONS</h3>
+                <p>We design and implement robust network solutions to ensure seamless connectivity and optimal performance.</p>
+            </div>
+            <div class="about-item">
+                <i class="fas fa-shield-alt service-icon"></i>
+                <h3>IT SECURITY</h3>
+                <p>We provide comprehensive IT security services to protect your systems and data from cyber threats.</p>
+            </div>
+            <div class="about-item">
+                <i class="fas fa-server service-icon"></i>
+                <h3>SERVER ADMINISTRATION</h3>
+                <p>Our server administration services ensure your servers are properly configured, maintained, and optimized.</p>
+            </div>
+            <div class="about-item">
+                <i class="fas fa-comments service-icon"></i>
+                <h3>IT CONSULTING</h3>
+                <p>We offer expert IT consulting services to help you make informed decisions and achieve your business goals.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="location" class="content-section hidden">
+        <h2>Our Location</h2>
+        <p>We are located at the heart of Dar es Salaam, Tanzania. Visit us at our office for consultations and support.</p>
+        <div id="map" style="height: 400px; width: 100%;"></div>
+    </div>
+
+    <div id="partners" class="content-section hidden">
+        <h2>Our Partners</h2>
+        <div class="partners-details">
+            <div class="partner-item">
+                <h3>A+ Technologies</h3>
+                <p>Partner in Maintenance and Repair. They provide top-notch maintenance and repair services for our hardware and network systems, ensuring they are always running smoothly.</p>
+            </div>
+            <div class="partner-item">
+                <h3>Tajdeed Technologies</h3>
+                <p>Partner in Computer Sales & Supply. They supply the latest computers and IT equipment to meet our clients' needs for high-performance devices.</p>
+            </div>
+            <div class="partner-item">
+                <h3>Kembo Technologies</h3>
+                <p>Partner in Accessories Sales. They offer a wide range of IT accessories such as cables, adapters, and peripherals, ensuring that our clients' technical needs are fully met.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contacts" class="content-section hidden">
+        <h2>Contact Us</h2>
+        <p>For support or inquiries, please email us at <strong>mhbitservices@gmail.com</strong> or call <strong>+255766158873</strong>.</p>
+        <div class="contact-icons">
+            <a href="https://wa.me/255766158873" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="mailto:mhbitservices@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+255766158873"><i class="fas fa-phone"></i></a>
+        </div>
+    </div>
+
+    <div id="team" class="content-section hidden">
+        <h2>Our Team</h2>
+        <div class="team-details">
+            <div class="team-member">
+                <img src="https://photos.app.goo.gl/6a3yg33XivWGXwDw9" alt="Team Member 1">
+                <h3>Salmini Mndeme</h3>
+                <p>CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="path/to/image2.jpg" alt="Team Member 2">
+                <h3>Jane Smith</h3>
+                <p>CTO</p>
+            </div>
+            <div class="team-member">
+                <img src="path/to/image3.jpg" alt="Team Member 3">
+                <h3>Michael Johnson</h3>
+                <p>COO</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 MHB IT Services. All rights reserved.</p>
+            <p>Follow us on:
+                <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to show content when a navigation link is clicked
+        function showContent(section) {
+            // Hide all content sections
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(function (section) {
+                section.classList.add('hidden');
+            });
+
+            // Show the selected section
+            const selectedSection = document.getElementById(section);
+            selectedSection.classList.remove('hidden');
+
+            // Initialize map if location section is selected
+            if (section === 'location') {
+                initMap();
+            }
+        }
+
+        // Initialize and add the map
+        function initMap() {
+            // The location of the business
+            const businessLocation = { lat: -6.6744, lng: 39.2083 }; // Coordinates for Boko Chama, Kinondoni, Dar es Salaam
+            // The map, centered at the business location
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: businessLocation,
+            });
+            // The marker, positioned at the business location
+            const marker = new google.maps.Marker({
+                position: businessLocation,
+                map: map,
+            });
+        }
+    </script>
+
+</body>
+</html>
